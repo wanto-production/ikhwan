@@ -1,0 +1,11 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { ProjectContainer } from "@/components/projectcontainer.tsx"
+---
+
+<Layout title="project" keywords={["project ikhwan satrio"]} description="my project here!">
+    <main class=" w-full h-screen relative grid place-content-center">
+        <h1 class=" absolute top-5 left-5 text-4xl font-thin">my project</h1>
+        <ProjectContainer client:load/>
+    </main>
+</Layout>

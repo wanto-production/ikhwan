@@ -1,0 +1,12 @@
+---
+    import Layout from "@/layouts/Layout.astro";
+    import { PlanetModel } from "@/components/Planetmodel";
+    import Sidecard from "@/components/sidecard.tsx";
+---
+
+<Layout title="home" keywords={["portofolio","portofolio ikhwan satrio","ikhwan satrio"]} description="hello im ikhwan satrio form west java!">
+    <main class=" w-full h-screen flex flex-wrap justify-center items-center bg-white-absolute">
+        <PlanetModel client:only="svelte"/>	
+        <Sidecard client:only="react"/>
+    </main>
+</Layout>

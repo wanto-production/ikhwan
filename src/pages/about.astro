@@ -1,0 +1,42 @@
+---
+    import Layout from "@/layouts/Layout.astro";
+    import { PlanetModel } from "@/components/Planetmodel";
+    import { SkillList } from "@/components/skillbar.tsx"
+    import { Image } from "astro:assets";
+---
+
+<Layout title="about" keywords={["portofolio","portofolio ikhwan satrio","about portofolio ikhwan"]} description="about page for my portofolio">
+    <section class=" w-full h-screen flex flex-wrap justify-between md:px-8 items-center bg-white-absolute">
+        <div class=" p-3 grid gap-2 w-[300px]">
+            <h1 class=" font-poppins text-5xl font-bold">About.</h1>
+            <p class="text-xl font-[300] font-poppins">i'm frontend developer born in west java,indonesia</p>
+            <p class=" font-[200] font-poppins m-1">
+                Since 2023, I’ve enjoyed solving logical problems through code rather than memorization. When I’m not coding, I explore new technologies and challenge myself with logical puzzles. 🚀            
+            </p>
+        </div>
+        <PlanetModel client:only="svelte"/>
+    </section>
+    <section class="w-full h-screen bg-near-grey flex flex-wrap justify-around px-2.5 items-center">
+        <div>
+             <Image class=" rounded-md" src="/space.jpg" width={500} height={300} alt="space"/>
+             <p class="text-sm">Photo by <a class="text-blue-200" href="https://unsplash.com/@jeremythomasphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jeremy Thomas</a> on <a href="https://unsplash.com/photos/blue-and-purple-galaxy-digital-wallpaper-E0AHdsENmDg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>
+        </div>
+        
+        <div class=" flex flex-col justify-start gap-1.5 h-[350px]">
+            <h2 class=" font-[200] text-4xl">random facts</h2>
+            <ul class="m-1.5 *:font-thin">
+                <li>i drink a lot of coffe</li>
+                <li>i like about space</li>
+                <li>my favorite game is roblox</li>
+                <li>i like chalisthenic</li>
+            </ul> 
+        </div>
+    </section>
+    <section class="w-full h-screen bg-white flex flex-wrap justify-around items-start px-2.5 ">
+        <div class=" my-auto h-[300px]">
+            <h2 class=" font-[200] text-4xl">skills</h2>
+            <a class=" text-lg m-2" href="/project">my project <i class="fa-solid fa-chevron-right"></i></a>
+        </div>
+        <SkillList client:visible/>
+    </section>
+</Layout>
