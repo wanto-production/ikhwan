@@ -21,7 +21,7 @@
 <header
     class="w-full h-[90px] bg-dark-grey flex justify-between items-center px-4 md:px-10"
 >
-    <img class=" w-[70px] h-auto" src="/favicon.png" alt="logo" />
+    <img class=" w-[70px] h-auto" src="/favicon.ico" alt="logo" />
 
     <!-- Tombol Hamburger di Mobile -->
     <button
