@@ -18,8 +18,8 @@ const projects: Project[] = [
     title: "first portofolio",
     description: "website for show my portofolio",
     image: "/portofolio1.png",
-    url: "https://portofolio-ikhwan.vercel.app/",
-    isActive: true,
+    url: "#",
+    isActive: false,
   },
   {
     id: 2,
