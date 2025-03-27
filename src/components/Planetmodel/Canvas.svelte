@@ -8,7 +8,7 @@
   <Canvas>
     {#await import("./Model.svelte")}
       <div
-        class=" w-[400px] h-[400px] bg-light-grey rounded-md grid place-content-center"
+        class=" w-full h-full bg-light-grey rounded-md grid place-content-center"
       >
         <h2 class="text-black">wait 3D model loading...</h2>
       </div>
