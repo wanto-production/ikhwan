@@ -10,7 +10,7 @@
   });
 </script>
 
-{#await useGltf(import.meta.env.PUBLIC_GLB_URL)}
+{#await useGltf(import.meta.env.PUBLIC_GLB_URL + "/planet.glb")}
   <div
     class=" w-full h-full bg-light-grey rounded-md grid place-content-center"
   >
