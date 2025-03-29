@@ -10,5 +10,5 @@
     <h2 class="text-black">wait 3D model loading...</h2>
   </div>
 {:then { scene }}
-  <T is={scene} position.y={-20} scale={2} />
+  <T is={scene} position.y={25} scale={2} />
 {/await}
