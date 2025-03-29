@@ -7,13 +7,7 @@
   class=" w-[400px] h-[450px] lg:w-[500px] bg-black lg:h-[500px] rounded-md overflow-hidden"
 >
   <Canvas>
-    <T.PerspectiveCamera
-      makeDefault
-      position={[70, 20, -40]}
-      oncreate={(ref) => {
-        ref.lookAt(-20, -40, 10);
-      }}
-    >
+    <T.PerspectiveCamera makeDefault position={[70, 20, -40]}>
       <OrbitControls />
     </T.PerspectiveCamera>
     {#await import("./Model.svelte")}
