@@ -1,9 +1,10 @@
 <script lang="ts">
   import { T } from "@threlte/core";
   import { useGltf } from "@threlte/extras";
+  import { PUBLIC_GLB_URL } from "astro:env/client";
 </script>
 
-{#await useGltf(import.meta.env.PUBLIC_GLB_URL + "/codespace.glb")}
+{#await useGltf(PUBLIC_GLB_URL + "/codespace.glb")}
   <div
     class=" w-full h-full bg-light-grey rounded-md grid place-content-center"
   >
