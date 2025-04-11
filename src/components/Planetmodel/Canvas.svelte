@@ -1,19 +1,17 @@
 <script lang="ts">
   import { Canvas } from "@threlte/core";
+  import Model from "./Model.svelte";
 </script>
 
-<div
-  class=" w-[400px] h-[450px] lg:w-[500px] lg:h-[500px] rounded-md overflow-hidden"
->
-  <Canvas>
-    {#await import("./Model.svelte")}
-      <div
-        class=" w-full h-full bg-light-grey rounded-md grid place-content-center"
-      >
-        <h2 class="text-black">wait 3D model loading...</h2>
-      </div>
-    {:then { default: Model }}
+<svelte:boundary>
+  <div
+    class=" w-[400px] h-[450px] bg-[#0c0c0c] lg:w-[500px] lg:h-[500px] rounded-lg overflow-hidden shadow-lg"
+  >
+    <Canvas>
       <Model />
-    {/await}
-  </Canvas>
-</div>
+    </Canvas>
+  </div>
+  {#snippet failed()}
+    <h2>somthing wrong</h2>
+  {/snippet}
+</svelte:boundary>
