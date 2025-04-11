@@ -4,7 +4,7 @@
 </script>
 
 <div
-  class=" shadow-lg w-[300px] h-[350px] lg:w-[500px] bg-black lg:h-[500px] rounded-md overflow-hidden"
+  class=" shadow-lg w-[300px] h-[300px] lg:w-[500px] bg-black lg:h-[500px] rounded-md overflow-hidden"
 >
   <Canvas>
     <T.PerspectiveCamera makeDefault position={[70, 20, -40]}>
