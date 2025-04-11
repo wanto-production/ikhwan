@@ -5,7 +5,7 @@
 
 <svelte:boundary>
   <div
-    class=" w-[400px] h-[450px] bg-[#0c0c0c] lg:w-[500px] lg:h-[500px] rounded-lg overflow-hidden shadow-lg"
+    class=" w-[400px] h-[420px] bg-[#0c0c0c] lg:w-[500px] lg:h-[500px] rounded-lg overflow-hidden shadow-lg"
   >
     <Canvas>
       <Model />
