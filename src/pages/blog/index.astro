@@ -11,14 +11,14 @@ const blogs = await getCollection('blog')
   description="blog page, i share a day in my life here!"
 >
   <main class="w-full min-h-screen flex justify-center items-start py-10 bg-gray-50">
-    <div class="w-[90%] h-[600px] flex flex-wrap gap-6 shadow-2xl p-5 rounded-lg ">
+    <div class="w-[90%] h-[690px] flex flex-wrap gap-6 shadow-2xl p-5 rounded-lg overflow-y-auto ">
       {blogs.map((blog: CollectionEntry<"blog"> ) => (
       <a href={`/blog/${blog.id.replaceAll('.md','')}`}>
-        <article class=" w-fit lg:h-[300px] sm:w-full md:w-[50%]  bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+        <article class=" sm:w-full h-[320px] bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
           <img 
             src={blog.data.thumbnail} 
             alt={blog.data.title} 
-            class="w-full h-40 object-cover"
+            class=" h-40 w-full object-cover object-top"
             transition:name={`image-${blog.id.replaceAll('.md','')}`}
             />
           <div class="p-4">

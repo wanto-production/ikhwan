@@ -1,9 +1,10 @@
 ---
-title: " My Experience with Anime Oregairu"
+title: "My Experience with Anime Oregairu"
 date: "2025-04-11"
 description: "anime peak with philosophy"
 category: "anime"
 thumbnail: "/blog/oregairu.jpg"
+relatedPost: ["silent-voice"]
 ---
 
 When I was a kid, I used to think that people who watched anime were just lazy, thoughtless, cringy, and had all sorts of negative stigmas attached to them.

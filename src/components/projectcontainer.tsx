@@ -80,7 +80,7 @@ const ProjectCard: React.FC<Project> = ({
 
 const ProjectContainer: React.FC = () => {
   return (
-    <div className="p-8 flex flex-wrap gap-6 justify-center w-full overflow-x-hidden  overflow-y-auto h-[450px]">
+    <div className="p-8 flex flex-wrap gap-6 shadow-2xl rounded-xl justify-center w-full overflow-x-hidden  overflow-y-auto h-[450px]">
       {projects.map((project) => (
         <ProjectCard key={project.id} {...project} />
       ))}
