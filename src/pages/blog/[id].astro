@@ -31,13 +31,13 @@
         src={blog?.data.thumbnail}
         alt={blog?.data.title}
         class="aspect-[16/9] w-full object-cover rounded-lg shadow-md"
-          transition:name={`image-${blog.id.replaceAll('.md','')}`}
+          transition:name={`image-${id}`}
       />
     </div>
 
     <!-- Konten blog -->
     <div class="flex-1 space-y-6">
-      <h1 class="text-3xl font-bold leading-tight">{blog?.data.title}</h1>
+        <h1 class="text-3xl font-bold leading-tight" transition:name={`title-${id}`}>{blog?.data.title}</h1>
       <p class="text-gray-500 text-sm">Published on {blog?.data.date}</p>
       
       <div class="prose prose-gray max-w-none">
