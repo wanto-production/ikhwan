@@ -13,9 +13,11 @@
   }) satisfies GetStaticPaths;
 
   const { id } = Astro.params
-  const blog = await getEntry('blog',id)!
-  const related = await getCollection("blog").then(blog=> blog.filter(item=>item.data.relatedPost?.includes(id)))
-  const { Content } = await render(blog)
+  const [blog,related] = await Promise.all([
+    getEntry('blog',id)!,
+    getCollection("blog").then(blog=> blog.filter(item=>item.data.relatedPost?.includes(id)))!
+  ])
+ const { Content } = await render(blog)
 ---
 
 <Layout 
