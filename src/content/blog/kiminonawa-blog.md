@@ -1,7 +1,7 @@
 ---
 title: "Why Kimi no Na wa Is a Mindblowing Anime Worth Rewatching"
-date: "2025-04-11"
-description: "A breathtaking journey through time, fate, and emotions — Kimi no Na wa is more than just a love story."
+date: "2025-04-12"
+description: "A mindbending love story across time and memory, worth every rewatch."
 category: "anime"
 thumbnail: "/blog/kimi-no-nawa.jpg"
 relatedPost: ["first-blog","silent-voice"]
