@@ -14,7 +14,7 @@ const blogs = await getCollection('blog')
     <div class="w-[90%] h-[600px] flex flex-wrap gap-6 shadow-2xl p-5 rounded-lg ">
       {blogs.map((blog: CollectionEntry<"blog"> ) => (
       <a href={`/blog/${blog.id.replaceAll('.md','')}`}>
-        <article class=" w-fit h-[300px] sm:w-full md:w-[50%]  bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+        <article class=" w-fit lg:h-[300px] sm:w-full md:w-[50%]  bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
           <img 
             src={blog.data.thumbnail} 
             alt={blog.data.title} 
