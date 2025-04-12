@@ -13,13 +13,13 @@ const blogs = await getCollection('blog')
   <main class="w-full min-h-screen flex justify-center items-start py-10 bg-gray-50">
     <div class="w-[90%] h-[600px] flex flex-wrap gap-6 shadow-2xl p-5 rounded-lg ">
       {blogs.map((blog: CollectionEntry<"blog"> ) => (
-        <a href={`/blog/${blog.id}`}>
+      <a href={`/blog/${blog.id.replaceAll('.md','')}`}>
         <article class=" w-fit h-[300px]  bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
           <img 
             src={blog.data.thumbnail} 
             alt={blog.data.title} 
             class="w-full h-40 object-cover"
-            transition:name={`image-${blog.id}`}
+            transition:name={`image-${blog.id.replaceAll('.md','')}`}
             />
           <div class="p-4">
             <h2 class="text-xl font-semibold mb-2">{blog.data.title}</h2>

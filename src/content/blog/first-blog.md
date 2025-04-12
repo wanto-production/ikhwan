@@ -1,12 +1,10 @@
 ---
-title: "my favorite anime"
+title: " My Experience with Anime Oregairu"
 date: "2025-04-11"
 description: "anime peak with philosophy"
 category: "anime"
 thumbnail: "/blog/oregairu.jpg"
 ---
-
-# My Experience with Anime Oregairu
 
 When I was a kid, I used to think that people who watched anime were just lazy, thoughtless, cringy, and had all sorts of negative stigmas attached to them.
 
@@ -16,7 +14,8 @@ But everything changed when I watched the anime **"Oregairu"**. It had a slightl
 
 From this anime, I learned a lot about life, critical thinking, and maybe got a little possessed by the idea of becoming the main character (hehe).
 
-## My Rating for Oregairu:
+## My Rating for Oregairu
+
 - **Romance:** 7/10  
 - **Comedy:** 6/10  
 - **Philosophy:** 100/10 (mind-blowing)
