@@ -4,7 +4,7 @@ date: "2025-04-12"
 description: "A mindbending love story across time and memory, worth every rewatch."
 category: "anime"
 thumbnail: "/blog/kimi-no-nawa.jpg"
-relatedPost: ["first-blog","silent-voice"]
+relatedPost: ["first-blog","silent-voice","tenki-no-ko","suzume"]
 ---
 
 > *“I wanted to tell you... wherever you may be, that I always loved you.”*  
