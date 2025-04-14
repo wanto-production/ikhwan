@@ -17,16 +17,12 @@ const blogs = await getCollection('blog')
       <a href={`/blog/${blog.id.replaceAll('.md','')}`}>
         <article class=" w-[350px] max-[442px]:w-full flex-1 h-[370px] bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
           {blog.data.thumbnail?(
-           <Image 
-              src={blog.data.thumbnail as any} 
-              alt={blog.data.title} 
-              class="h-40 w-full object-cover object-top" 
-              transition:name={`image-${blog.id.replaceAll('.md','')}`} 
-              format="webp" 
-              widths={[400, 800, 1200]} 
-              sizes="(max-width: 768px) 100vw, 50vw"
-            />
-
+            <img 
+                src={blog.data.thumbnail} 
+                alt={blog.data.title} 
+                class=" h-40 w-full object-cover object-top"
+                transition:name={`image-${blog.id.replaceAll('.md','')}`}
+            />          
           ):(
             <div class=" w-full h-40 bg-gray-300 grid place-content-center">
               <h2 class=" text-sm text-white font-thin font-poppins">{blog.data.title}</h2>

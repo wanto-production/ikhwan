@@ -36,14 +36,11 @@
         <!-- Gambar utama -->
         {blog.data.thumbnail && (
           <div class="flex-shrink-0 w-full lg:w-1/3">
-          <Image
-            src={blog.data.thumbnail as any}
-            alt={blog.data.title}
+         <img
+            src={blog?.data.thumbnail}
+            alt={blog?.data.title}
             class="aspect-[16/9] w-full object-cover rounded-lg shadow-md"
             transition:name={`image-${id}`}
-            format="webp"
-            widths={[400, 800, 1200]}
-            sizes="(max-width: 768px) 100vw, 50vw"
           />
 
           </div>
