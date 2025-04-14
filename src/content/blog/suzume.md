@@ -1,7 +1,7 @@
 ---
-title: "Why Suzume Is a Mindblowing Anime Set in the Same Universe as Weathering With You"
+title: "Why Suzume Is a Mindblowing Anime"
 date: "2025-04-14"
-description: "A beautiful tale of loss, healing, and supernatural doors—tied to Makoto Shinkai’s growing shared universe."
+description: "A powerful tale of healing, doors, and disaster in Shinkai’s shared universe."
 category: "anime"
 thumbnail: "/blog/suzume.jpg"
 relatedPost: ["tenki-no-ko", "kiminonawa-blog"]

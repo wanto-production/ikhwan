@@ -1,7 +1,7 @@
 ---
-title: "Weathering With You: A Mindbending Romance in the Same Universe as Suzume"
+title: "Weathering With You Is Emotionally Brilliant"
 date: "2025-04-14"
-description: "A breathtaking story of love, sacrifice, and climate—linked to Suzume through a hidden shared universe."
+description: "A romantic, rainy tale connected to Suzume in Shinkai’s universe."
 category: "anime"
 thumbnail: "/blog/tenki-no-ko.jpg"
 relatedPost: ["suzume", "kiminonawa-blog"]
