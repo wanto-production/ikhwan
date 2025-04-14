@@ -3,7 +3,6 @@ title: "Weathering With You Is Emotionally Brilliant"
 date: "2025-04-14"
 description: "A romantic, rainy tale connected to Suzume in Shinkai’s universe."
 category: "anime"
-thumbnail: "/blog/tenki-no-ko.jpg"
 relatedPost: ["suzume", "kiminonawa-blog"]
 ---
 

@@ -3,7 +3,6 @@ title: "Why Suzume Is a Mindblowing Anime"
 date: "2025-04-14"
 description: "A powerful tale of healing, doors, and disaster in Shinkai’s shared universe."
 category: "anime"
-thumbnail: "/blog/suzume.jpg"
 relatedPost: ["tenki-no-ko", "kiminonawa-blog"]
 ---
 
