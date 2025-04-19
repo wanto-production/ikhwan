@@ -11,7 +11,7 @@ export function InputFilter(){
       <Input type="text" value={inputs.text} onChange={e => input.set({ ...inputs, text: e.target.value })} placeholder="search by title" />
       <Select onValueChange={e => input.set({ ...inputs, select: e })} value={inputs.select}>
         <SelectTrigger>
-          <SelectValue placeholder="category"/>
+          <SelectValue placeholder={inputs.select}/>
         </SelectTrigger>
         <SelectContent>
             <SelectItem value="all">all</SelectItem>
