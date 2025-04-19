@@ -2,7 +2,7 @@
 title: "Why I Love Neovim (Even When It Fights Me)"
 date: "2025-04-12"
 description: "My journey with Neovim"
-category: "programming"
+category: tech"
 thumbnail: "/blog/nvim.png"
 ---
 

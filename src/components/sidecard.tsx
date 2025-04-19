@@ -1,6 +1,6 @@
-import React, { useId } from "react";
+import { useId } from "react";
 import { useStore } from "@nanostores/react";
-import { size, speed } from "./Planetmodel/state";
+import { size, speed } from "./svelte/Planetmodel/state";
 import { Input } from "./ui/input";
 import { Label } from "./ui/label";
 

@@ -1,6 +1,8 @@
 ---
 import Layout from "@/layouts/Layout.astro"
 import { getCollection, type CollectionEntry } from "astro:content"
+import Container from "@/components/filterComp/Container.svelte"
+import { InputFilter } from "@/components/filterComp/input.tsx"
 
 const blogs = await getCollection('blog')
 ---
@@ -10,32 +12,10 @@ const blogs = await getCollection('blog')
   keywords={["blog of ikhwan satrio","ikhwan satrio blog","main blog ikhwan satrio"]}
   description="blog page, i share a day in my life here!"
 >
-  <main class="w-full min-h-screen flex justify-center items-start py-10 bg-gray-50">
+  <main class="w-full min-h-screen flex flex-col justify-start items-center py-10 bg-gray-50 gap-5">
+    <InputFilter client:load/>
     <div class="w-[90%] h-[690px] flex flex-wrap gap-6 shadow-2xl p-5 rounded-lg overflow-x-hidden overflow-y-auto ">
-      {blogs.map((blog: CollectionEntry<"blog"> ) => (
-      <a href={`/blog/${blog.id.replaceAll('.md','')}`}>
-        <article class=" w-[350px] max-[442px]:w-full flex-1 h-[370px] bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
-          {blog.data.thumbnail?(
-            <img 
-                src={blog.data.thumbnail} 
-                alt={blog.data.title} 
-                class=" h-40 w-full object-cover object-top"
-                transition:name={`image-${blog.id.replaceAll('.md','')}`}
-            />          
-          ):(
-            <div class=" w-full h-40 bg-gray-300 grid place-content-center">
-              <h2 class=" text-sm text-white font-thin font-poppins">{blog.data.title}</h2>
-            </div>
-          )}
-        <div class="p-4">
-            <h2 class="text-xl font-semibold mb-2" transition:name={`title-${blog.id.replaceAll('.md','')}`}>{blog.data.title}</h2>
-            <p class="text-sm text-gray-600">{blog.data.description}</p>
-            <p class="text-xs text-gray-400 mt-2">{blog.data.date}</p>
-            <p class="text-xs text-gray-400 mt-2">category: {blog.data.category}</p>
-        </div>
-        </article>
-        </a>
-      ))}
+      <Container {blogs} client:idle/> 
     </div>
   </main> 
 </Layout>
