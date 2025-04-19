@@ -1,6 +1,7 @@
 <script lang="ts">
   import { fly } from "svelte/transition";
   import { navigate } from "astro:transitions/client";
+  import { input } from "../filterComp/state";
 
   let showMenu = $state(false);
   let isNavigating = $state(false);
@@ -14,6 +15,7 @@
   async function navigating(url: string) {
     isNavigating = true; // Aktifkan animasi sebelum navigasi
     showMenu = false;
+    input.set({ text: "", select: "" });
 
     navigate(url); // Navigasi setelah animasi selesai
   }
