@@ -5,4 +5,4 @@ type Props = {
   select: string
 }
 
-export const input = atom<Props>({ text:"",select:"tech" })
+export const input = atom<Props>({ text:"",select:"all" })

@@ -15,7 +15,6 @@
   async function navigating(url: string) {
     isNavigating = true; // Aktifkan animasi sebelum navigasi
     showMenu = false;
-    input.set({ text: "", select: "" });
 
     navigate(url); // Navigasi setelah animasi selesai
   }
