@@ -1,8 +1,8 @@
 import { useId } from "react";
 import { useStore } from "@nanostores/react";
-import { size, speed } from "./svelte/Planetmodel/state";
-import { Input } from "./ui/input";
-import { Label } from "./ui/label";
+import { size, speed } from "@/components/svelte/Planetmodel/state";
+import { Input } from "@/components/react/ui/input";
+import { Label } from "@/components/react/ui/label";
 
 export default function Sidecard() {
   const speed$ = useStore(speed);

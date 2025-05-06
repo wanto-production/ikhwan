@@ -1,7 +1,7 @@
 import React from "react";
 import Tilt from "react-parallax-tilt";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/react/ui/card";
+import { Badge } from "@/components/react/ui/badge";
 
 interface Project {
   id: number;
