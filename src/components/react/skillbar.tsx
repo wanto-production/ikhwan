@@ -1,5 +1,6 @@
 import React from "react";
 import Tilt from "react-parallax-tilt";
+import { For } from "@/components/react/utils/react_utils";
 
 interface Skill {
   name: string;
@@ -46,9 +47,9 @@ const SkillList: React.FC = () => {
       className="w-[320px] my-auto p-6 bg-white rounded-2xl shadow-lg"
     >
       <div className="space-y-4">
-        {skills.map((skill, index) => (
+        <For each={skills}>{(skill, index) => (
           <SkillBar key={index} {...skill} />
-        ))}
+        )}</For>
       </div>
     </Tilt>
   );

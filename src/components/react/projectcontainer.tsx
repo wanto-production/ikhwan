@@ -2,6 +2,7 @@ import React from "react";
 import Tilt from "react-parallax-tilt";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/react/ui/card";
 import { Badge } from "@/components/react/ui/badge";
+import { For } from "@/components/react/utils/react_utils"
 
 interface Project {
   id: number;
@@ -81,9 +82,11 @@ const ProjectCard: React.FC<Project> = ({
 const ProjectContainer: React.FC = () => {
   return (
     <div className="p-8 flex flex-wrap gap-6 shadow-2xl rounded-xl justify-center w-full overflow-x-hidden  overflow-y-auto h-[450px]">
-      {projects.map((project) => (
-        <ProjectCard key={project.id} {...project} />
-      ))}
+      <For each={projects}>
+        {(project, _) => (
+          <ProjectCard key={project.id} {...project} />
+        )}
+      </For>
     </div>
   );
 };
